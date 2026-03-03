@@ -1,24 +1,41 @@
-import Hello from './components/Hello';
-import Fruits from './components/Fruits';
-import ConditionalComponent from './components/ConditionalComponent';
-import Message from './components/Message';
-import Counter from './components/Counter';
-import Form from './components/Form';
+import PropsSimple from './components/SimpleProps';
+import PropsDestructuring from './components/Destructuring-Props';
+import Button from './components/Rest-operation-destructing';
+import ArrayListRendering from './components/ArrayListRendering';
+import ArrayObject from './components/ArrayObjectRendering';
+import Primitive from './components/StateReat';  
+import StringState from './components/StringState';
+import BooleanExample from './components/StringBoolen';
+import AddArray from './components/AddStateArray';
+import AddObjectState from './components/AddObjectState';
+
+
 function App() {
-  const person = {
-    name: 'rob',
-    message: 'hi',
-    emoji: '😊',
-    seatNumbers: [1, 2, 3],
+
+  const handleDelete = (city) => {
+    alert(`delete ${city}`);
   };
   return (
     <div className="App">
-      <Hello person={person} />
-      <ConditionalComponent />
-      <Fruits />
-      <Message />
-      <Counter />
-      <Form />
+      <PropsSimple name="Priyanka" />
+      <PropsDestructuring
+        name="Priyanka"
+        age={23}
+        address={{ city: 'dhaka', country: 'Bangladesh' }}
+        onDelete={handleDelete}
+      />
+      <Button
+        text="Click me"
+        onClick={() => alert('hello priyanka')}
+        className="btn"
+      />
+      <ArrayListRendering />
+      <ArrayObject />
+      <Primitive />
+      <StringState />
+      <BooleanExample/>
+      <AddArray/>
+      <AddObjectState />
     </div>
   );
 }
