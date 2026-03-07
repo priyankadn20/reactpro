@@ -126,15 +126,86 @@ state is a built-in object that stores a component’s dynamic data and determin
       > ADD Array state
       > REMOVE Array state
       > UPDATE Array state
+
  • Object state
       > ADD Object state
       > REMOVE Object state
       > UPDATE Object state
- • Boolean state
- • Drive state 
- • Functional Updates
- • Lazy Initial State
- • State with Form Input
- • State Array of Objects
 
- 
+ • Nested object/array state
+
+ • Functional updates (prev state)
+
+ • Derived/Computed state
+
+
+ # Event Handling
+
+    • onClick, onChange, onSubmit, etc.
+
+    • Handling form input
+
+    • Controlled Components
+
+    • Prevent default form submit
+
+    • Event parameter handling
+
+
+#Conditional Rendering
+- Showing different UI (components or elements) based on a condition.
+
+    • if/else in JSX
+
+    • Ternary operator
+     - The Ternary Operator is a short way to write an if...else condition inside JSX.
+
+    • Logical && operator
+      > &&
+         - It returns the second value if the first one is truthy.
+         - If the first value is falsy → it returns the first value.
+
+    • Show/Hide components
+
+# List Rendering
+
+    • map() to render list
+
+    • key attribute importance
+     - key is a special attribute you add to elements when rendering lists.
+
+    • Update specific item in array
+
+    • Delete item from array
+
+    • Add item dynamically
+
+    • Nested list rendering
+
+
+
+# React Hooks (Beyond useState)
+
+     • useEffect 
+       - To handle side effects after rendering.
+       - side effects is anything that is NOT directly returning JSX UI.
+       - Examples:
+               - Fetching API data(JavaScript built-in function)
+                                   - bring long data from server
+
+               - Setting timer (- setInterval->repeat &
+                                - SetTimeout-> one time &
+                                - clearInterval -> cleanup)
+
+               - Updating document title
+               - Local storage
+               - Adding event listener
+               - Cleanup tasks
+
+     • useRef
+
+     • useContext
+
+     • useReducer (optional but good for complex state)
+
+     • Custom Hooks (creating reusable hooks)

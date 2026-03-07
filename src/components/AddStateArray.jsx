@@ -17,7 +17,11 @@ function AddArray() {
       <h2>List Of Array State</h2>
       <ul>
         {foods.map((food, index) => (
-          <li key={index} onClick={() => handleUpdate(index)} onDoubleClick={() => handleDelete(index)}>
+          <li
+            key={index}
+            onClick={() => handleUpdate(index)}
+            onDoubleClick={() => handleDelete(index)}
+          >
             {food}
           </li>
         ))}

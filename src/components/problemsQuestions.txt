@@ -1,0 +1,71 @@
+Problem 1: Product Card System Using Props
+
+      Objective:
+      Create a React component system where the parent passes product data to a child component using props, and the child displays each product with a "Buy Now" button.
+
+      Requirements:
+
+      Parent Component:
+      Contains an array of products. Example:
+
+      [
+      { id: 1, name: "Laptop", price: 50000 },
+      { id: 2, name: "Phone", price: 20000 },
+      { id: 3, name: "Tablet", price: 30000 }
+      ]
+      Passes this array to a child component using props.
+
+      Child Component (ProductCard or ProductCardSystem):
+      Receives props: name and price of each product.
+      Displays each product in a card layout.
+      Includes a "Buy Now" button for each product.
+      When clicked, the button triggers a function that shows an alert with the product name:
+
+      Example: "You have bought Laptop"
+      Bonus (Optional):
+      Pass a function from parent to child as a prop to handle the buy action.
+      The child component should call this function instead of handling the alert itself.
+
+      Expected UI:
+      Laptop - $50000
+      [Buy Now]
+
+      Phone - $20000
+      [Buy Now]
+
+      Tablet - $30000
+      [Buy Now]
+
+      Clicking "Buy Now" should show the corresponding alert.
+
+
+
+Problem 2: Counter with Limit
+
+        Objective:
+        Create a React component that tracks a number using state and allows the user to increase or decrease it.
+
+        Requirements:
+        Create a component called Counter.
+        Use useState to store a count value (start with 0).
+
+        Add 3 buttons:
+        Increase → increases count by 1
+        Decrease → decreases count by 1
+        Reset → resets count to 0
+
+        Limit the count:
+        Count cannot go below 0
+        Count cannot go above 10
+        Display the current count in an <h1> tag.
+
+        Bonus (Optional):
+        Disable the Increase button when count is 10
+        Disable the Decrease button when count is 0
+
+        Expected Behavior:
+        [Decrease] 0 [Increase] [Reset]
+        Click Increase → 1
+        Click Increase → 2 … until 10
+        Click Decrease → goes down to 0
+        Click Reset → goes back to 0
