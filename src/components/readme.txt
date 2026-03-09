@@ -203,9 +203,57 @@ state is a built-in object that stores a component’s dynamic data and determin
                - Cleanup tasks
 
      • useRef
+     - store a value or access a DOM element without causing a re-render
 
      • useContext
+      - createContext() → context create
+      - Provider → value provide 
+      - useContext() → value consume 
+      > Aboid driling
 
      • useReducer (optional but good for complex state)
+          - state
+          - dispatch
 
      • Custom Hooks (creating reusable hooks)
+      - reusable logic function that uses React hooks
+
+     • useMemo
+     • useCallback
+
+ # API Call
+
+     • fetch()
+
+     • axios
+
+     • useEffect + API call
+
+     • Loading state
+
+     • Error handling  
+
+# React Router
+
+     • install react-router-dom
+
+     • BrowserRouter
+
+     • Routes
+
+     • Route
+
+     • Link
+
+     • useParams
+
+     • useNavigate  
+
+# Styling in React
+
+     • CSS
+
+     • CSS Modules
+
+     • Tailwind CSS
+     

@@ -19,6 +19,11 @@ import TernaryOperation from './components/TernaryOperation';
 import ListRendering from './components/ListRendering';
 import NestedListRender from './components/NestedListRendering';
 import IncrementCount from './components/UseEffectPracticeOne';
+import SetingTime from './components/SetingTime';
+import  Counter from './components/UpdatingDocumentTitle';
+import EventListener from './components/EventListenerPrc';
+import AppRef from './components/RefPractice';
+import UserProvider from './components/UserProvider';
 
 function App() {
   const handleDelete = (city) => {
@@ -61,6 +66,11 @@ function App() {
       <ListRendering />
       <NestedListRender />
       <IncrementCount />
+      <SetingTime />
+      <Counter />
+      <EventListener />
+      <AppRef />
+      <UserProvider  />
     </div>
   );
 }
